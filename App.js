@@ -60,7 +60,7 @@ export default function App() {
       <FlatList
         data={DATA}
         renderItem={meuItem}
-        keyExtractor={item => item.id}
+        keyExtractor={item => item.id.toString()}
       />
     </View>
   )
